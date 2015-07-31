@@ -67,6 +67,7 @@ def SCRAPE_VIDEOS(url,scrape_type=None):
     
 
     response = urllib2.urlopen(req)
+    print response.read()
     json_source = json.load(response)                           
     response.close()                
     
